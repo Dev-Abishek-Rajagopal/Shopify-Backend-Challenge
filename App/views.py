@@ -223,9 +223,9 @@ def search_ImgRep(request):
         print(search_query)
         print(search_user)
         dbi = ImgRep.objects.filter(Q(name=search_query) & Q(scope="PUBLIC") |
-                                    Q(name=search_query) & Q(scope="PRIVATE") &Q(scope=search_user) |
+                                    Q(name=search_query) & Q(scope="PRIVATE") &Q(user=search_user) |
                                     Q(color_palette__icontains=search_query) & Q(scope="PUBLIC") |
-                                    Q(color_palette__icontains=search_query) & Q(scope="PRIVATE") & Q(scope=search_user)
+                                    Q(color_palette__icontains=search_query) & Q(scope="PRIVATE") & Q(user=search_user)
                                     )
         print(dbi)
         serializer = ImgRepSerializer(dbi, many=True)
