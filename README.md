@@ -5,7 +5,7 @@
 <b><h3>     RepUser    </b></h3>
 
  |------------| <br>
- | email      |  <br>
+ <p>| email      |</p>  <br>
  | username   |  <br>
  | firstname  |<br>
  | lastname   |<br>
