@@ -1,0 +1,173 @@
+WARNING 2021-09-20 15:10:55,630 log 15440 17932 Not Found: /
+WARNING 2021-09-20 15:10:55,631 basehttp 15440 17932 "GET / HTTP/1.1" 404 2166
+WARNING 2021-09-20 15:10:55,733 log 15440 17932 Not Found: /favicon.ico
+WARNING 2021-09-20 15:10:55,733 basehttp 15440 17932 "GET /favicon.ico HTTP/1.1" 404 2217
+WARNING 2021-09-20 15:11:00,863 log 15440 17932 Not Found: /user
+WARNING 2021-09-20 15:11:00,863 basehttp 15440 17932 "GET /user HTTP/1.1" 404 2196
+WARNING 2021-09-20 15:11:12,703 log 15440 17932 Not Found: /repapp
+WARNING 2021-09-20 15:11:12,703 basehttp 15440 17932 "GET /repapp HTTP/1.1" 404 2202
+WARNING 2021-09-20 15:11:17,338 log 15440 17932 Not Found: /repapp/
+WARNING 2021-09-20 15:11:17,338 basehttp 15440 17932 "GET /repapp/ HTTP/1.1" 404 2438
+WARNING 2021-09-20 15:11:22,864 log 15440 17932 Unauthorized: /repapp/user/
+WARNING 2021-09-20 15:11:22,865 basehttp 15440 17932 "GET /repapp/user/ HTTP/1.1" 401 5119
+ERROR 2021-09-20 15:11:47,024 log 21832 16616 Internal Server Error: /repapp/user/
+Traceback (most recent call last):
+  File "S:\ACC\Shopify App\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "S:\ACC\Shopify App\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "S:\ACC\Shopify App\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 548, in data
+    ret = super().data
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 250, in data
+    self._data = self.get_initial()
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 398, in get_initial
+    for field in self.fields.values()
+  File "S:\ACC\Shopify App\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 1053, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 1199, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "S:\ACC\Shopify App\lib\site-packages\rest_framework\serializers.py", line 1317, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `first_name` is not valid for model `RepUser`.
+ERROR 2021-09-20 15:11:47,026 basehttp 21832 16616 "GET /repapp/user/ HTTP/1.1" 500 134508
+WARNING 2021-09-20 20:59:00,101 log 10216 14304 Not Found: //media/ImgRep/12.jpg
+WARNING 2021-09-20 20:59:00,101 basehttp 10216 14304 "GET //media/ImgRep/12.jpg HTTP/1.1" 404 2370
+WARNING 2021-09-21 00:56:08,552 log 16612 13268 Not Found: /repapp/img/
+WARNING 2021-09-21 00:56:08,553 basehttp 16612 13268 "POST /repapp/img/ HTTP/1.1" 404 10389
+WARNING 2021-09-21 00:56:34,292 log 16612 13268 Not Found: /repapp/img/
+WARNING 2021-09-21 00:56:34,292 basehttp 16612 13268 "POST /repapp/img/ HTTP/1.1" 404 10343
+WARNING 2021-09-21 00:56:47,858 log 16612 13268 Not Found: /repapp/img/
+WARNING 2021-09-21 00:56:47,859 basehttp 16612 13268 "POST /repapp/img/ HTTP/1.1" 404 10351
+WARNING 2021-09-21 00:56:52,824 log 16612 13268 Not Found: /repapp/img/
+WARNING 2021-09-21 00:56:52,824 basehttp 16612 13268 "POST /repapp/img/ HTTP/1.1" 404 10351
+WARNING 2021-09-21 00:57:25,878 log 16612 13268 Not Found: /repapp/img/
+WARNING 2021-09-21 00:57:25,879 basehttp 16612 13268 "POST /repapp/img/ HTTP/1.1" 404 10351
+WARNING 2021-09-21 00:57:45,089 log 16612 13268 Not Found: /repapp/img/
+WARNING 2021-09-21 00:57:45,090 basehttp 16612 13268 "POST /repapp/img/ HTTP/1.1" 404 10351
+WARNING 2021-09-21 00:59:22,059 log 19792 3352 Not Found: /repapp/img/
+WARNING 2021-09-21 00:59:22,060 basehttp 19792 3352 "POST /repapp/img/ HTTP/1.1" 404 10348
+WARNING 2021-09-21 01:01:10,196 log 3516 23936 Not Found: /repapp/img/
+WARNING 2021-09-21 01:01:10,196 basehttp 3516 23936 "POST /repapp/img/ HTTP/1.1" 404 10386
+WARNING 2021-09-21 01:02:52,382 log 17348 19000 Not Found: /repapp/img/
+WARNING 2021-09-21 01:02:52,382 basehttp 17348 19000 "POST /repapp/img/ HTTP/1.1" 404 10348
+WARNING 2021-09-21 01:05:15,714 log 3472 4004 Not Found: /repapp/img/
+WARNING 2021-09-21 01:05:15,715 basehttp 3472 4004 "POST /repapp/img/ HTTP/1.1" 404 10345
+WARNING 2021-09-21 01:09:14,368 log 7364 11100 Not Found: /repapp/img/
+WARNING 2021-09-21 01:09:14,368 basehttp 7364 11100 "POST /repapp/img/ HTTP/1.1" 404 10388
+WARNING 2021-09-21 01:10:57,831 log 3128 8508 Not Found: /repapp/img/
+WARNING 2021-09-21 01:10:57,831 basehttp 3128 8508 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:11:33,376 log 23788 24328 Not Found: /repapp/img/
+WARNING 2021-09-21 01:11:33,377 basehttp 23788 24328 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:11:56,116 log 23788 24328 Not Found: /repapp/img/
+WARNING 2021-09-21 01:11:56,116 basehttp 23788 24328 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:12:38,532 log 6680 192 Not Found: /repapp/img/
+WARNING 2021-09-21 01:12:38,533 basehttp 6680 192 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:16:29,555 log 2232 19264 Not Found: /repapp/img/
+WARNING 2021-09-21 01:16:29,555 basehttp 2232 19264 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:17:50,378 log 3068 11680 Not Found: /repapp/img/
+WARNING 2021-09-21 01:17:50,378 basehttp 3068 11680 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:19:32,282 log 4188 14256 Not Found: /repapp/img/
+WARNING 2021-09-21 01:19:32,283 basehttp 4188 14256 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:20:07,585 log 24996 19956 Not Found: /repapp/img/
+WARNING 2021-09-21 01:20:07,585 basehttp 24996 19956 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:22:37,179 log 3232 1516 Not Found: /repapp/img/
+WARNING 2021-09-21 01:22:37,180 basehttp 3232 1516 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:24:04,945 log 15164 17212 Not Found: /repapp/img/
+WARNING 2021-09-21 01:24:04,946 basehttp 15164 17212 "POST /repapp/img/ HTTP/1.1" 404 10354
+WARNING 2021-09-21 01:35:48,284 log 17208 11640 Not Found: /repapp/img/
+WARNING 2021-09-21 01:35:48,285 basehttp 17208 11640 "POST /repapp/img/ HTTP/1.1" 404 10312
+WARNING 2021-09-21 01:36:35,537 log 22360 13896 Not Found: /repapp/img/
+WARNING 2021-09-21 01:36:35,537 basehttp 22360 13896 "POST /repapp/img/ HTTP/1.1" 404 10396
+WARNING 2021-09-21 01:44:43,614 log 15976 17484 Not Found: /repapp/img/
+WARNING 2021-09-21 01:44:43,614 basehttp 15976 17484 "POST /repapp/img/ HTTP/1.1" 404 10405
+WARNING 2021-09-21 01:45:13,708 log 17724 8508 Not Found: /repapp/img/
+WARNING 2021-09-21 01:45:13,709 basehttp 17724 8508 "POST /repapp/img/ HTTP/1.1" 404 10329
+WARNING 2021-09-21 01:45:25,424 log 17724 8508 Not Found: /repapp/img/
+WARNING 2021-09-21 01:45:25,424 basehttp 17724 8508 "POST /repapp/img/ HTTP/1.1" 404 10329
+WARNING 2021-09-21 01:47:14,778 log 22272 25340 Not Found: /repapp/img/
+WARNING 2021-09-21 01:47:14,778 basehttp 22272 25340 "POST /repapp/img/ HTTP/1.1" 404 10311
+WARNING 2021-09-21 02:03:19,206 log 1936 13300 Not Found: /repapp/img/
+WARNING 2021-09-21 02:03:19,206 basehttp 1936 13300 "POST /repapp/img/ HTTP/1.1" 404 10405
+WARNING 2021-09-21 02:03:36,000 log 1936 13300 Not Found: /repapp/img/
+WARNING 2021-09-21 02:03:36,001 basehttp 1936 13300 "POST /repapp/img/ HTTP/1.1" 404 10405
+WARNING 2021-09-21 02:03:41,029 log 1936 13300 Not Found: /repapp/img/
+WARNING 2021-09-21 02:03:41,030 basehttp 1936 13300 "POST /repapp/img/ HTTP/1.1" 404 10405
+WARNING 2021-09-21 17:33:49,591 log 18428 9660 Not Found: /
+WARNING 2021-09-21 17:33:49,593 basehttp 18428 9660 "GET / HTTP/1.1" 404 2292
+WARNING 2021-09-21 17:33:49,717 log 18428 9660 Not Found: /favicon.ico
+WARNING 2021-09-21 17:33:49,718 basehttp 18428 9660 "GET /favicon.ico HTTP/1.1" 404 2343
+WARNING 2021-09-21 17:36:54,833 log 18428 8164 Unauthorized: /repapp/search/
+WARNING 2021-09-21 17:36:54,833 basehttp 18428 8164 "GET /repapp/search/?search=reader&user=5 HTTP/1.1" 401 27
+WARNING 2021-09-21 17:37:19,163 log 18428 8164 Unauthorized: /repapp/search/
+WARNING 2021-09-21 17:37:19,164 basehttp 18428 8164 "GET /repapp/search/?search=reader&user=5 HTTP/1.1" 401 27
+WARNING 2021-09-21 17:38:40,460 log 1980 8784 Unauthorized: /repapp/search/
+WARNING 2021-09-21 17:38:40,461 basehttp 1980 8784 "GET /repapp/search/?search=reader&user=5 HTTP/1.1" 401 27
+WARNING 2021-09-22 00:33:25,403 log 19040 9080 Not Found: /repapp/cart/
+WARNING 2021-09-22 00:33:25,404 basehttp 19040 9080 "GET /repapp/cart/ HTTP/1.1" 404 13140
+ERROR 2021-09-22 00:36:20,541 log 11924 12648 Internal Server Error: /admin/App/imgcart/
+Traceback (most recent call last):
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: App_imgcart.img_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "S:\ACC\Shopify App\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "S:\ACC\Shopify App\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\contrib\admin\sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "S:\ACC\Shopify App\lib\site-packages\django\contrib\admin\options.py", line 1815, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "S:\ACC\Shopify App\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: App_imgcart.img_id
+ERROR 2021-09-22 00:36:20,544 basehttp 11924 12648 "GET /admin/App/imgcart/ HTTP/1.1" 500 160738
