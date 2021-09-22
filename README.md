@@ -4,34 +4,34 @@
 
 <b><h3>     RepUser    </b></h3>
 
- |------------|
- | email      |  
- | username   |  
- | firstname  |
- | lastname   |
- | is_staff   |     ----->  RepUser if is_staff = "Yes" ==> Can access Django Admin 
- | is_active  |
- |____________|
+ |------------| <br>
+ | email      |  <br>
+ | username   |  <br>
+ | firstname  |<br>
+ | lastname   |<br>
+ | is_staff   |     ----->  RepUser if is_staff = "Yes" ==> Can access Django Admin<br> 
+ | is_active  |<br>
+ |____________|<br>
  
  <b><h3>     ImgRep    </b></h3>
 
- |----------------|
- | img            |  
- | name           |  
- | user           |    ----->  RepUser foreign key
- | scope          |
- | price          |
- | discount       |
- | color_palette  |    ----->  colors that are dectected from the Uploaded Image
- |________________|
+ |----------------|<br>
+ | img            |  <br>
+ | name           |  <br>
+ | user           |    ----->  RepUser foreign key<br>
+ | scope          |<br>
+ | price          |<br>
+ | discount       |<br>
+ | color_palette  |    ----->  colors that are dectected from the Uploaded Image<br>
+ |________________|<br>
  
   <b><h3>     ImgCart    </b></h3>
 
- |----------|
- | img      |    ----->  ImgRep foreign key
- | user     |    ----->  RepUser foreign key
- | quantity |
- |__________|
+ |----------|<br>
+ | img      |    ----->  ImgRep foreign key<br>
+ | user     |    ----->  RepUser foreign key<br>
+ | quantity |<br>
+ |__________|<br>
 
 
 <b><h2>||     Django/Framework Configuration    ||</b></h2>
@@ -51,23 +51,23 @@
 
 <b><h2>||     Searching Image    ||</b></h2>
 
---->  with IMAGE_NAME and SCOPE = "public"
---->  with IMAGE_NAME, SCOPE = "private" and USER_NAME
---->  with COLOR_PALETTE and SCOPE = "public"
---->  with COLOR_PALETTE, SCOPE = "private" and USER_NAME
+--->  with IMAGE_NAME and SCOPE = "public"<br>
+--->  with IMAGE_NAME, SCOPE = "private" and USER_NAME<br>
+--->  with COLOR_PALETTE and SCOPE = "public"<br>
+--->  with COLOR_PALETTE, SCOPE = "private" and USER_NAME<br>
 
 <b><h2>||     Directory Structure    ||</b></h2>
 
-\---imgrep
-    |   .coverage
-    |   db.sqlite3
-    |   manage.py
-    |   
-    +---App                                                 ------> App Folder
-    |   |   admin.py                                        ------> Python/Django Admin configrations
-    |   |   apps.py
-    |   |   models.py                                       ------> DB models are defined here
-    |   |   serializers.py                                  ------> Allow complex data such as querysets and model instances to be converted to native Python datatypes
+\---imgrep<br>
+    |   .coverage<br>
+    |   db.sqlite3<br>
+    |   manage.py<br>
+    |   <br>
+    +---App                                                 ------> App Folder<br>
+    |   |   admin.py                                        ------> Python/Django Admin configrations<br>
+    |   |   apps.py<br>
+    |   |   models.py                                       ------> DB models are defined here<br>
+    |   |   serializers.py                                  ------> Allow complex data such as querysets and model instances to be converted to native Python datatypes<br>
     |   |   tests.py
     |   |   urls.py                                         ------> Sub url folder for API
     |   |   views.py
