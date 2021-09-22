@@ -68,79 +68,79 @@
     |   |   apps.py<br>
     |   |   models.py                                       ------> DB models are defined here<br>
     |   |   serializers.py                                  ------> Allow complex data such as querysets and model instances to be converted to native Python datatypes<br>
-    |   |   tests.py
-    |   |   urls.py                                         ------> Sub url folder for API
-    |   |   views.py
-    |   |   __init__.py
-    |   |   
-    |   +---migrations
-    |   |      0001_initial.py
-    |   |      0002_repuser_is_superuser.py
-    |   |      0003_auto_20210919_0245.py
-    |   |      0004_imgcart_imgrep.py
-    |   |      0005_imgrep_color_palette.py
-    |   |      0006_alter_imgcart_img.py
-    |   |      0007_remove_imgcart_img.py
-    |   |      0008_imgcart_img.py
-    |   |      __init__.py  
-    +---imgrep                                              ------> Project Folder
-    |   |   asgi.py
-    |   |   settings.py                                     ------> File contains Django config/settings
-    |   |   urls.py                                         ------> Main url folder for API
-    |   |   wsgi.py
-    |   |   __init__.py
-    |   |   
-    |   \---__pycache__
-    |           settings.cpython-39.pyc
-    |           urls.cpython-39.pyc
-    |           wsgi.cpython-39.pyc
-    |           __init__.cpython-39.pyc
-    |           
-    +---logs                                                ------> log Folder                     
-    |       debugger.log
-    |       system.log
-    |       task.log
-    |       
-    +---media                                               ------> Uploaded images are stored here 
-    |   \---ImgRep
-    |           1.jpg
-    |           12.jpg
-    |           12_3CPqN3C.jpg
+    |   |   tests.py<br>
+    |   |   urls.py                                         ------> Sub url folder for API<br>
+    |   |   views.py<br>
+    |   |   __init__.py<br>
+    |   |   <br>
+    |   +---migrations<br>
+    |   |      0001_initial.py<br>
+    |   |      0002_repuser_is_superuser.py<br>
+    |   |      0003_auto_20210919_0245.py<br>
+    |   |      0004_imgcart_imgrep.py<br>
+    |   |      0005_imgrep_color_palette.py<br>
+    |   |      0006_alter_imgcart_img.py<br>
+    |   |      0007_remove_imgcart_img.py<br>
+    |   |      0008_imgcart_img.py<br>
+    |   |      __init__.py  <br>
+    +---imgrep                                              ------> Project Folder<br>
+    |   |   asgi.py<br>
+    |   |   settings.py                                     ------> File contains Django config/settings<br>
+    |   |   urls.py                                         ------> Main url folder for API<br>
+    |   |   wsgi.py<br>
+    |   |   __init__.py<br>
+    |   |   <br>
+    |   \---__pycache__<br>
+    |           settings.cpython-39.pyc<br>
+    |           urls.cpython-39.pyc<br>
+    |           wsgi.cpython-39.pyc<br>
+    |           __init__.cpython-39.pyc<br>
+    |           <br>
+    +---logs                                                ------> log Folder <br>                    
+    |       debugger.log<br>
+    |       system.log<br>
+    |       task.log<br>
+    |       <br>
+    +---media                                               ------> Uploaded images are stored here <br>
+    |   \---ImgRep<br>
+    |           1.jpg<br>
+    |           12.jpg<br>
+    |           12_3CPqN3C.jpg<br>
 
 
 <b><h2>||     Run Django Framework    ||</b></h2>
 
-python manage.py makemigrations
+python manage.py makemigrations<br>
 
-python manage.py migrate
+python manage.py migrate<br>
 
-python manage.py runserver
+python manage.py runserver<br>
 
 <b><h2>||     API Collections    ||</b></h2>
 
-GET request : http://{HOST}/repapp/user/ --> List of all Users
-POST request : http://{HOST}/repapp/user/ --> Register Users
+GET request : http://{HOST}/repapp/user/ --> List of all Users<br>
+POST request : http://{HOST}/repapp/user/ --> Register Users<br>
 
-GET request : http://{HOST}/repapp/user/{id} --> Get particular User
-PUT request : http://{HOST}/repapp/user/{id} --> Update particular User
-DELETE request : http://{HOST}/repapp/user/{id} --> Delete particular User
+GET request : http://{HOST}/repapp/user/{id} --> Get particular User<br>
+PUT request : http://{HOST}/repapp/user/{id} --> Update particular User<br>
+DELETE request : http://{HOST}/repapp/user/{id} --> Delete particular User<br>
 
 
-GET request : http://{HOST}/repapp/img/ --> List of all Images
-POST request : http://{HOST}/repapp/img/ --> Register Images
+GET request : http://{HOST}/repapp/img/ --> List of all Images<br>
+POST request : http://{HOST}/repapp/img/ --> Register Images<br>
 
-GET request : http://{HOST}/repapp/img/{id} --> Get particular Images
-PUT request : http://{HOST}/repapp/img/{id} --> Update particular Images
-DELETE request : http://{HOST}/repapp/img/{id} --> Delete particular Images
+GET request : http://{HOST}/repapp/img/{id} --> Get particular Images<br>
+PUT request : http://{HOST}/repapp/img/{id} --> Update particular Images<br>
+DELETE request : http://{HOST}/repapp/img/{id} --> Delete particular Images<br>
 
-GET request : http://{HOST}/repapp/cart/ --> List of all Cart
-POST request : http://{HOST}/repapp/cart/ --> Register Cart
+GET request : http://{HOST}/repapp/cart/ --> List of all Cart<br>
+POST request : http://{HOST}/repapp/cart/ --> Register Cart<br>
+<br>
+GET request : http://{HOST}/repapp/cart/{id} --> Get particular Cart<br>
+PUT request : http://{HOST}/repapp/cart/{id} --> Update particular Cart<br>
+DELETE request : http://{HOST}/repapp/cart/{id} --> Delete particular Cart<br>
 
-GET request : http://{HOST}/repapp/cart/{id} --> Get particular Cart
-PUT request : http://{HOST}/repapp/cart/{id} --> Update particular Cart
-DELETE request : http://{HOST}/repapp/cart/{id} --> Delete particular Cart
-
-GET request : http://{HOST}/repapp/search/ --> Filter Images based on Query Params search( search text ) and user (User requested) 
+GET request : http://{HOST}/repapp/search/ --> Filter Images based on Query Params search( search text ) and user (User requested) <br>
 
 
 
