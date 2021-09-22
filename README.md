@@ -4,26 +4,26 @@
 
 <b><h3>     RepUser    </b></h3>
 
- |------------| <br>
- <p>| email      |</p>  <br>
- | username   |  <br>
- | firstname  |<br>
- | lastname   |<br>
- | is_staff   |     ----->  RepUser if is_staff = "Yes" ==> Can access Django Admin<br> 
- | is_active  |<br>
- |____________|<br>
+ |------------ <br>
+ | email      </p>  <br>
+ | username     <br>
+ | firstname  <br>
+ | lastname   <br>
+ | is_staff        ----->  RepUser if is_staff = "Yes" ==> Can access Django Admin<br> 
+ | is_active  <br>
+ |____________<br>
  
  <b><h3>     ImgRep    </b></h3>
 
- |----------------|<br>
- | img            |  <br>
- | name           |  <br>
- | user           |    ----->  RepUser foreign key<br>
- | scope          |<br>
- | price          |<br>
- | discount       |<br>
- | color_palette  |    ----->  colors that are dectected from the Uploaded Image<br>
- |________________|<br>
+ |----------------<br>
+ | img              <br>
+ | name             <br>
+ | user               ----->  RepUser foreign key<br>
+ | scope          <br>
+ | price          <br>
+ | discount       <br>
+ | color_palette      ----->  colors that are dectected from the Uploaded Image<br>
+ |________________<br>
  
   <b><h3>     ImgCart    </b></h3>
 
